@@ -1,0 +1,38 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(1, 1, 80);
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card{
+    display: flex;
+    background-color: rgb(6, 6, 255);
+    padding: 50px;
+    border-radius: 10%;
+    height: 50%;
+    width: 40%;
+    color: rgb(34, 233, 233);
+    font-family: Montserrat;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card a{
+    color: rgb(98, 223, 118);
+}
+
+.card h6{
+    margin-top: 35%;
+}
