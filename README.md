@@ -1,2 +1,2 @@
 # sistema-simples-de-login
-Um projeto em PHP, no qual é possível um usuário acessar informações de um banco de dados, com base no usuário e senha.
+Sistema de login simples desenvolvido em PHP procedural, com cadastro e autenticação de usuários utilizando sessões e hash de senha.
