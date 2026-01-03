@@ -1,3 +1,32 @@
+.paragrafo-erro{
+    margin-left: 5%;
+    color: white;
+}
+
+.caixa-erro{
+    position: absolute;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    animation: some 3s linear forwards;
+}
+
+.caixa-erro i{
+    transform: scale(2.0);
+    margin-left: 5%;
+}
+
+@keyframes some {
+    from{
+        opacity: 1;
+    } to{
+        opacity: 0;
+    }
+}
+
 body,html{
     padding: 0;
     margin: 0;
@@ -7,18 +36,78 @@ body,html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(1, 1, 80);
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #4facfe);
+    font-family: montserrat;
 }
 
-.form-login{
+.form{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.input-group {
+    position: relative;
+    width: 50%;
+    margin-left: -40px;
+}
+
+.input-group input {
+    width: 100%;
+    padding-left: 40px;
+    height: 40px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.eye{
+    cursor: pointer;
+    color: grey;
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form button {
+    border: 0;
+    width: 30%;
+    height: 60px;
+    border-radius: 10px;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    transition: ease 0.2s;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#mensagem-erro{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card{
     display: flex;
-    background-color: rgb(6, 6, 255);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 50px;
     border-radius: 10%;
     height: 50%;
@@ -27,6 +116,7 @@ body,html{
     font-family: Montserrat;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 10px black;
 }
 
 .card a{
